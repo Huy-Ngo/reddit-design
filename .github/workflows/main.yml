@@ -23,7 +23,7 @@ jobs:
 
       # SVG
       - name: Checkout to SVG
-        run: git branch -B svg
+        run: git checkout -B svg
       - name: Generate SVG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
@@ -40,7 +40,7 @@ jobs:
       # PNG
       - name: Cleanup for PNG
         run: |
-          git branch -B png
+          git checkout -B png
           git clean -f
       - name: Generate PNG Diagrams
         uses: cloudbees/plantuml-github-action@master
