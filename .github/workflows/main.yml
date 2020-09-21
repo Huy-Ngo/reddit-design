@@ -21,15 +21,33 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Reuses existing action
+      # SVG
       - name: Generate SVG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
             args: -v -tsvg *.puml
+      - name: Push Local Changes
+        uses:  stefanzweifel/git-auto-commit-action@v4.1.2 
+        with: 
+          commit_user_name: "Huy-Ngo"
+          commit_user_email: "duchuy29092000@gmail.com"
+          commit_author: "Huy-Ngo <duchuy29092000@gmail.com>"
+          commit_message: "Generate SVG diagrams" 
+          branch: svg
+      # PNG
       - name: Generate PNG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
             args: -v -tpng *.puml
+      - name: Push Local Changes
+        uses:  stefanzweifel/git-auto-commit-action@v4.1.2 
+        with: 
+          commit_user_name: "Huy-Ngo"
+          commit_user_email: "duchuy29092000@gmail.com"
+          commit_author: "Huy-Ngo <duchuy29092000@gmail.com>"
+          commit_message: "Generate PNG diagrams" 
+          branch: png
+      # XMI
       - name: Generate XMI Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
@@ -40,6 +58,6 @@ jobs:
           commit_user_name: "Huy-Ngo"
           commit_user_email: "duchuy29092000@gmail.com"
           commit_author: "Huy-Ngo <duchuy29092000@gmail.com>"
-          commit_message: "Generate SVG and PNG images for PlantUML diagrams" 
-          branch: ${{ github.head_ref }}
+          commit_message: "Generate XMI diagrams" 
+          branch: xmi
 
