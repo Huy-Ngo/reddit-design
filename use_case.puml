@@ -5,6 +5,7 @@ skinparam packageStyle rectangle
 actor "User" as user
 actor "Subreddit Moderator" as mod
 actor "Superuser" as su
+mod -|> user
 rectangle Post as post {
   usecase "View post" as post_view
   usecase "Create post" as post_create
@@ -35,51 +36,66 @@ rectangle Subreddit as sub {
 
 rectangle "User Management" as user_mng {
   usecase "View user" as user_view
-  usecase "Create user" as user_create
   usecase "Delete user" as user_delete
   usecase "Block user" as user_block
   usecase "Ban user from subreddit" as user_ban
 }
 
+rectangle "Authentication" as auth {
+  usecase "Create account" as acc_create
+  usecase "Log in" as login
+  usecase "Log out" as logout
+  usecase "Change password" as pwd_change
+}
+
+user --> acc_create
+user --> login
+user --> logout
+user --> pwd_change
+
 user --> post_create
-user --> post_edit
-user --> post_delete
 user --> post_view
+user --> post_edit
+user --> post_up
+user --> post_down
+
+user --> cmt_up
+user --> cmt_down
 user --> cmt_create
 user --> cmt_edit
-user --> cmt_delete
 user --> cmt_view
+
+user --> sub_create
 user --> sub_join
 user --> sub_leave
 user --> sub_view
+
 user --> user_block
 user --> user_view
 
-post_lock <-- mod
-post_view <-- mod
-post_create <-- mod
-post_delete <-- mod
-cmt_view <-- mod
-cmt_delete <-- mod
-sub_create <-- mod
-sub_edit <-- mod
-sub_view <-- mod
-sub_delete <-- mod
-user_ban <-- mod
+mod -[#green]-> post_lock
+mod -[#green]-> sub_edit
+mod -[#green]-> sub_delete
+mod -[#green]-> user_ban
 
-su -[#blue]-> post_view
-su -[#blue]-> post_delete
-su -[#blue]-> cmt_view
-su -[#blue]-> cmt_delete
-su -[#blue]-> sub_view
-su -[#blue]-> sub_delete
-su -[#blue]-> user_view
-su -[#blue]-> user_create
-su -[#blue]-> user_delete
+post_view   <-[#blue]- su
+post_delete <-[#blue]- su
+cmt_view    <-[#blue]- su
+cmt_delete  <-[#blue]- su
+sub_view    <-[#blue]- su
+sub_delete  <-[#blue]- su
+user_view   <-[#blue]- su
+user_delete <-[#blue]- su
+acc_create  <-[#blue]- su
+login       <-[#blue]- su
+logout      <-[#blue]- su
+pwd_change  <-[#blue]- su
 
-post_view <-- post_up : <<extends>>
-post_view <-- post_down : <<extends>>
-cmt_view <-- cmt_up : <<extends>>
-cmt_view <-- cmt_down : <<extends>>
+post_create <.. post_delete : <<extends>>
+post_create ..> post_view : <<includes>>
+cmt_create ..> cmt_view : <<includes>>
+cmt_create <.. cmt_delete : <<extends>>
+sub_create ..> sub_view : <<includes>>
+sub_create ..> sub_join : <<includes>>
 
 @enduml
