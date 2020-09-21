@@ -1,0 +1,85 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+rectangle Post as post {
+  usecase "View post" as post_view
+  usecase "Create post" as post_create
+  usecase "Edit post" as post_edit
+  usecase "Delete post" as post_delete
+  usecase "Upvote post" as post_up
+  usecase "Downvote post" as post_down
+  usecase "Lock comment" as post_lock
+}
+
+rectangle Comment as cmt {
+  usecase "View comment" as cmt_view
+  usecase "Create comment" as cmt_create
+  usecase "Upvote commentt" as cmt_up
+  usecase "Downvote comment" as cmt_down
+  usecase "Edit comment" as cmt_edit
+  usecase "Delete comment" as cmt_delete
+}
+
+rectangle Subreddit as sub {
+  usecase "View subreddit" as sub_view
+  usecase "Create subreddit" as sub_create
+  usecase "Edit subreddit" as sub_edit
+  usecase "Delete subreddit" as sub_delete
+  usecase "Join subreddit" as sub_join
+  usecase "Leave subreddit" as sub_leave
+}
+
+rectangle "User Management" as user_mng {
+  usecase "View user" as user_view
+  usecase "Create user" as user_create
+  usecase "Delete user" as user_delete
+  usecase "Block user" as user_block
+  usecase "Ban user from subreddit" as user_ban
+}
+
+user --> post_create
+user --> post_edit
+user --> post_delete
+user --> post_view
+user --> cmt_create
+user --> cmt_edit
+user --> cmt_delete
+user --> cmt_view
+user --> sub_join
+user --> sub_leave
+user --> sub_view
+user --> user_block
+user --> user_view
+
+post_lock <-- mod
+post_view <-- mod
+post_create <-- mod
+post_delete <-- mod
+cmt_view <-- mod
+cmt_delete <-- mod
+sub_create <-- mod
+sub_edit <-- mod
+sub_view <-- mod
+sub_delete <-- mod
+user_ban <-- mod
+
+su -[#blue]-> post_view
+su -[#blue]-> post_delete
+su -[#blue]-> cmt_view
+su -[#blue]-> cmt_delete
+su -[#blue]-> sub_view
+su -[#blue]-> sub_delete
+su -[#blue]-> user_view
+su -[#blue]-> user_create
+su -[#blue]-> user_delete
+
+post_view <-- post_up : <<extends>>
+post_view <-- post_down : <<extends>>
+cmt_view <-- cmt_up : <<extends>>
+cmt_view <-- cmt_down : <<extends>>
+
+@enduml
