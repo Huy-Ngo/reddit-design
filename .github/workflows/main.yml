@@ -34,7 +34,8 @@ jobs:
           commit_user_name: "Huy-Ngo"
           commit_user_email: "duchuy29092000@gmail.com"
           commit_author: "Huy-Ngo <duchuy29092000@gmail.com>"
-          commit_message: "Generate SVG diagrams" 
+          commit_message: "Generate SVG diagrams"
+          push_options: '--force'
           branch: svg
       # PNG
       - name: Checkout branch png
@@ -50,6 +51,7 @@ jobs:
           commit_user_email: "duchuy29092000@gmail.com"
           commit_author: "Huy-Ngo <duchuy29092000@gmail.com>"
           commit_message: "Generate PNG diagrams" 
+          push_options: '--force'
           branch: png
       # XMI
       - name: Checkout branch xmi
@@ -65,5 +67,6 @@ jobs:
           commit_user_email: "duchuy29092000@gmail.com"
           commit_author: "Huy-Ngo <duchuy29092000@gmail.com>"
           commit_message: "Generate XMI diagrams" 
+          push_options: '--force'
           branch: xmi
 
