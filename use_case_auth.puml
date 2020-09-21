@@ -1,0 +1,26 @@
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+
+rectangle "Authentication" as auth {
+  usecase "Create account" as acc_create
+  usecase "Log in" as login
+  usecase "Log out" as logout
+  usecase "Change password" as pwd_change
+}
+
+user --> acc_create
+user --> login
+user --> logout
+user --> pwd_change
+
+acc_create  <-[#blue]- su
+login       <-[#blue]- su
+logout      <-[#blue]- su
+pwd_change  <-[#blue]- su
+
+@enduml

@@ -1,7 +1,6 @@
 @startuml
-left to right direction
 skinparam packageStyle rectangle
-
+left to right direction
 actor "User" as user
 actor "Subreddit Moderator" as mod
 actor "Superuser" as su

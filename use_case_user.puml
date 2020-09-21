@@ -1,0 +1,22 @@
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+rectangle "User Management" as user_mng {
+  usecase "View user" as user_read
+  usecase "Delete user" as user_delete
+  usecase "Block user" as user_block
+  usecase "Ban user from subreddit" as user_ban
+}
+user --> user_block
+user --> user_read
+
+mod -[#green]-> user_ban
+
+user_read   <-[#blue]- su
+user_delete <-[#blue]- su
+
+@enduml

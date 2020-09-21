@@ -1,0 +1,32 @@
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+
+rectangle Subreddit as sub {
+  usecase "Create subreddit" as sub_create
+  usecase "View subreddit" as sub_read
+  usecase "Edit subreddit" as sub_update
+  usecase "Delete subreddit" as sub_delete
+
+  usecase "Join subreddit" as sub_join
+  usecase "Leave subreddit" as sub_leave
+}
+
+user --> sub_create
+user --> sub_read
+user --> sub_join
+user --> sub_leave
+
+mod -[#green]-> sub_delete
+
+sub_read    <-[#blue]- su
+sub_delete  <-[#blue]- su
+
+sub_create ..> sub_read : <<includes>>
+sub_create ..> sub_join : <<includes>>
+
+@enduml

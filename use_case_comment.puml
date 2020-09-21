@@ -1,0 +1,30 @@
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+
+rectangle Comment as cmt {
+  usecase "Create comment" as cmt_create
+  usecase "View comment" as cmt_read
+  usecase "Edit comment" as cmt_update
+  usecase "Delete comment" as cmt_delete
+
+  usecase "Upvote commentt" as cmt_up
+  usecase "Downvote comment" as cmt_down
+}
+
+user --> cmt_create
+user --> cmt_read
+user --> cmt_update
+user --> cmt_delete
+
+user --> cmt_up
+user --> cmt_down
+
+cmt_read    <-[#blue]- su
+cmt_delete  <-[#blue]- su
+
+@enduml
