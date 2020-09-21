@@ -22,8 +22,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # SVG
-      - name: Check branches
-        run: git branch
+      - name: Checkout branch svg
+        run: git checkout -B svg
       - name: Generate SVG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
@@ -37,6 +37,8 @@ jobs:
           commit_message: "Generate SVG diagrams" 
           branch: svg
       # PNG
+      - name: Checkout branch png
+        run: git checkout -B png
       - name: Generate PNG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
@@ -50,6 +52,8 @@ jobs:
           commit_message: "Generate PNG diagrams" 
           branch: png
       # XMI
+      - name: Checkout branch xmi
+        run: git checkout -B xmi
       - name: Generate XMI Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
