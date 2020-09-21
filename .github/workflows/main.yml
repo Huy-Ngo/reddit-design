@@ -22,10 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Install PlantUML
-        run: sudo apt install plantuml
+      # Reuses existing action
+      - name: PlantUML Generator
+        uses: cloudbees/plantuml-github-action@v1.1.0
 
-      # Runs a set of commands using the runners shell
-      - name: Generate UML diagrams
-        run: plantuml *.puml
