@@ -56,6 +56,7 @@ user --> pwd_change
 user --> post_create
 user --> post_view
 user --> post_edit
+user --> post_delete
 user --> post_up
 user --> post_down
 
@@ -64,6 +65,7 @@ user --> cmt_down
 user --> cmt_create
 user --> cmt_edit
 user --> cmt_view
+user --> cmt_delete
 
 user --> sub_create
 user --> sub_join
@@ -91,10 +93,8 @@ login       <-[#blue]- su
 logout      <-[#blue]- su
 pwd_change  <-[#blue]- su
 
-post_create <.. post_delete : <<extends>>
 post_create ..> post_view : <<includes>>
 cmt_create ..> cmt_view : <<includes>>
-cmt_create <.. cmt_delete : <<extends>>
 sub_create ..> sub_view : <<includes>>
 sub_create ..> sub_join : <<includes>>
 
