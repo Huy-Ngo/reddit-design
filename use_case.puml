@@ -7,35 +7,38 @@ actor "Subreddit Moderator" as mod
 actor "Superuser" as su
 mod -|> user
 rectangle Post as post {
-  usecase "View post" as post_view
   usecase "Create post" as post_create
-  usecase "Edit post" as post_edit
+  usecase "View post" as post_read
+  usecase "Edit post" as post_update
   usecase "Delete post" as post_delete
+
   usecase "Upvote post" as post_up
   usecase "Downvote post" as post_down
   usecase "Lock comment" as post_lock
 }
 
 rectangle Comment as cmt {
-  usecase "View comment" as cmt_view
   usecase "Create comment" as cmt_create
+  usecase "View comment" as cmt_read
+  usecase "Edit comment" as cmt_update
+  usecase "Delete comment" as cmt_delete
+
   usecase "Upvote commentt" as cmt_up
   usecase "Downvote comment" as cmt_down
-  usecase "Edit comment" as cmt_edit
-  usecase "Delete comment" as cmt_delete
 }
 
 rectangle Subreddit as sub {
-  usecase "View subreddit" as sub_view
   usecase "Create subreddit" as sub_create
-  usecase "Edit subreddit" as sub_edit
+  usecase "View subreddit" as sub_read
+  usecase "Edit subreddit" as sub_update
   usecase "Delete subreddit" as sub_delete
+
   usecase "Join subreddit" as sub_join
   usecase "Leave subreddit" as sub_leave
 }
 
 rectangle "User Management" as user_mng {
-  usecase "View user" as user_view
+  usecase "View user" as user_read
   usecase "Delete user" as user_delete
   usecase "Block user" as user_block
   usecase "Ban user from subreddit" as user_ban
@@ -54,48 +57,51 @@ user --> logout
 user --> pwd_change
 
 user --> post_create
-user --> post_view
-user --> post_edit
+user --> post_read
+user --> post_update
 user --> post_delete
+
 user --> post_up
 user --> post_down
 
-user --> cmt_up
-user --> cmt_down
 user --> cmt_create
-user --> cmt_edit
-user --> cmt_view
+user --> cmt_read
+user --> cmt_update
 user --> cmt_delete
 
+user --> cmt_up
+user --> cmt_down
+
 user --> sub_create
+user --> sub_read
 user --> sub_join
 user --> sub_leave
-user --> sub_view
 
 user --> user_block
-user --> user_view
+user --> user_read
 
 mod -[#green]-> post_lock
-mod -[#green]-> sub_edit
+mod -[#green]-> sub_update
 mod -[#green]-> sub_delete
 mod -[#green]-> user_ban
 
-post_view   <-[#blue]- su
+post_read   <-[#blue]- su
 post_delete <-[#blue]- su
-cmt_view    <-[#blue]- su
+cmt_read    <-[#blue]- su
 cmt_delete  <-[#blue]- su
-sub_view    <-[#blue]- su
+sub_read    <-[#blue]- su
 sub_delete  <-[#blue]- su
-user_view   <-[#blue]- su
+user_read   <-[#blue]- su
 user_delete <-[#blue]- su
+
 acc_create  <-[#blue]- su
 login       <-[#blue]- su
 logout      <-[#blue]- su
 pwd_change  <-[#blue]- su
 
-post_create ..> post_view : <<includes>>
-cmt_create ..> cmt_view : <<includes>>
-sub_create ..> sub_view : <<includes>>
+post_create ..> post_read : <<includes>>
+cmt_create ..> cmt_read : <<includes>>
+sub_create ..> sub_read : <<includes>>
 sub_create ..> sub_join : <<includes>>
 
 @enduml
