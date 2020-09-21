@@ -6,6 +6,7 @@ actor "User" as user
 actor "Subreddit Moderator" as mod
 actor "Superuser" as su
 mod -|> user
+
 rectangle Post as post {
   usecase "Create post" as post_create
   usecase "View post" as post_read
