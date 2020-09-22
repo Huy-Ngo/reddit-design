@@ -58,7 +58,6 @@ user --> logout
 user --> pwd_change
 
 user --> post_create
-user --> post_read
 user --> post_update
 user --> post_delete
 
@@ -74,8 +73,6 @@ user --> cmt_up
 user --> cmt_down
 
 user --> sub_create
-user --> sub_read
-user --> sub_join
 user --> sub_leave
 
 user --> user_block

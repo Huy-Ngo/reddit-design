@@ -17,8 +17,6 @@ rectangle Subreddit as sub {
 }
 
 user --> sub_create
-user --> sub_read
-user --> sub_join
 user --> sub_leave
 
 mod -[#green]-> sub_delete
