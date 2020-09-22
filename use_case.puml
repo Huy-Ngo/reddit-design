@@ -41,6 +41,7 @@ rectangle "User Management" as user_mng {
   usecase "View user" as user_read
   usecase "Delete user" as user_delete
   usecase "Block user" as user_block
+  usecase "Unblock user" as user_unblock
   usecase "Ban user from subreddit" as user_ban
 }
 
@@ -78,6 +79,7 @@ user --> sub_join
 user --> sub_leave
 
 user --> user_block
+user --> user_unblock
 user --> user_read
 
 mod -[#green]-> post_lock
