@@ -40,6 +40,7 @@ jobs:
       # PNG
       - name: Cleanup for PNG
         run: |
+          git checkout master
           git checkout -B png
           git clean -f
       - name: Generate PNG Diagrams
@@ -58,6 +59,7 @@ jobs:
       # XMI
       - name: Cleanup for XMI
         run: |
+          git checkout master
           git checkout -B xmi
           git clean -f
       - name: Generate XMI Diagrams
