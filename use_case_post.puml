@@ -18,7 +18,6 @@ rectangle Post as post {
 }
 
 user --> post_create
-user --> post_read
 user --> post_update
 user --> post_delete
 

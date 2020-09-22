@@ -20,6 +20,7 @@ user --> sub_create
 user --> sub_leave
 
 mod -[#green]-> sub_delete
+mod -[#green]-> sub_edit
 
 sub_read    <-[#blue]- su
 sub_delete  <-[#blue]- su
