@@ -7,19 +7,16 @@ actor "Superuser" as su
 mod -|> user
 
 rectangle Post as post {
-  usecase "Create post" as post_create
+  usecase "Manage post" as post_manage
   usecase "View post" as post_read
-  usecase "Edit post" as post_update
-  usecase "Delete post" as post_delete
 
   usecase "Upvote post" as post_up
   usecase "Downvote post" as post_down
   usecase "Lock comment" as post_lock
 }
 
-user --> post_create
-user --> post_update
-user --> post_delete
+user --> post_manage
+user --> post_read
 
 user --> post_up
 user --> post_down
@@ -28,7 +25,5 @@ mod -[#green]-> post_lock
 
 post_read   <-[#blue]- su
 post_delete <-[#blue]- su
-
-post_create ..> post_read : <<includes>>
 
 @enduml

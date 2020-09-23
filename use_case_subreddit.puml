@@ -9,8 +9,7 @@ mod -|> user
 rectangle Subreddit as sub {
   usecase "Create subreddit" as sub_create
   usecase "View subreddit" as sub_read
-  usecase "Edit subreddit" as sub_update
-  usecase "Delete subreddit" as sub_delete
+  usecase "Manage subreddit" as sub_manage
 
   usecase "Join subreddit" as sub_join
   usecase "Leave subreddit" as sub_leave

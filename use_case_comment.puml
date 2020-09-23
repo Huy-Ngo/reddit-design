@@ -7,19 +7,15 @@ actor "Superuser" as su
 mod -|> user
 
 rectangle Comment as cmt {
-  usecase "Create comment" as cmt_create
+  usecase "Manage comment" as cmt_manage
   usecase "View comment" as cmt_read
-  usecase "Edit comment" as cmt_update
-  usecase "Delete comment" as cmt_delete
 
   usecase "Upvote commentt" as cmt_up
   usecase "Downvote comment" as cmt_down
 }
 
-user --> cmt_create
+user --> cmt_manage
 user --> cmt_read
-user --> cmt_update
-user --> cmt_delete
 
 user --> cmt_up
 user --> cmt_down
