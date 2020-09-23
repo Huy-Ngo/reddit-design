@@ -10,8 +10,7 @@ rectangle Post as post {
   usecase "Manage post" as post_manage
   usecase "View post" as post_read
 
-  usecase "Upvote post" as post_up
-  usecase "Downvote post" as post_down
+  usecase "Vote post" as post_vote
   usecase "Lock comment" as post_lock
 }
 
@@ -19,8 +18,7 @@ rectangle Comment as cmt {
   usecase "Manage comment" as cmt_manage
   usecase "View comment" as cmt_read
 
-  usecase "Upvote commentt" as cmt_up
-  usecase "Downvote comment" as cmt_down
+  usecase "Vote commentt" as cmt_vote
 }
 
 rectangle Subreddit as sub {
@@ -75,6 +73,7 @@ user --> user_read
 mod -[#green]-> sub_manage
 mod -[#green]-> sub_add_mod
 mod -[#green]-> user_ban
+mod -[#green]-> post_lock
 
 post_manage   <-[#blue]- su
 cmt_manage    <-[#blue]- su

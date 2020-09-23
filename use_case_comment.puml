@@ -10,15 +10,13 @@ rectangle Comment as cmt {
   usecase "Manage comment" as cmt_manage
   usecase "View comment" as cmt_read
 
-  usecase "Upvote commentt" as cmt_up
-  usecase "Downvote comment" as cmt_down
+  usecase "Vote comment" as cmt_vote
 }
 
 user --> cmt_manage
 user --> cmt_read
 
-user --> cmt_up
-user --> cmt_down
+user --> cmt_vote
 
 cmt_read    <-[#blue]- su
 cmt_manage  <-[#blue]- su

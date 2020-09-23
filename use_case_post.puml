@@ -10,8 +10,7 @@ rectangle Post as post {
   usecase "Manage post" as post_manage
   usecase "View post" as post_read
 
-  usecase "Upvote post" as post_up
-  usecase "Downvote post" as post_down
+  usecase "Vote post" as post_vote
   usecase "Lock comment" as post_lock
 }
 
