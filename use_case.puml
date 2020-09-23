@@ -18,7 +18,7 @@ rectangle Comment as cmt {
   usecase "Manage comment" as cmt_manage
   usecase "View comment" as cmt_read
 
-  usecase "Vote commentt" as cmt_vote
+  usecase "Vote comment" as cmt_vote
 }
 
 rectangle Subreddit as sub {
@@ -54,14 +54,12 @@ user --> pwd_change
 user --> post_manage
 user --> post_read
 
-user --> post_up
-user --> post_down
+user --> post_vote
 
 user --> cmt_manage
 user --> cmt_read
 
-user --> cmt_up
-user --> cmt_down
+user --> cmt_vote
 
 user --> sub_create
 user --> sub_leave
@@ -86,9 +84,8 @@ login       <-[#blue]- su
 logout      <-[#blue]- su
 pwd_change  <-[#blue]- su
 
-post_create ..> post_read : <<includes>>
-cmt_create ..> cmt_read : <<includes>>
-sub_create ..> sub_read : <<includes>>
+post_manage ..> post_read : <<includes>>
+cmt_manage ..> cmt_read : <<includes>>
 sub_create ..> sub_join : <<includes>>
 sub_manage ..> sub_read : <<includes>>
 
