@@ -23,4 +23,6 @@ login       <-[#blue]- su
 logout      <-[#blue]- su
 pwd_change  <-[#blue]- su
 
+acc_create --> login : <<includes>>
+
 @enduml
