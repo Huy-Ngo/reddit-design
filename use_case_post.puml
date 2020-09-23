@@ -24,6 +24,8 @@ user --> post_down
 mod -[#green]-> post_lock
 
 post_read   <-[#blue]- su
-post_delete <-[#blue]- su
+post_manage <-[#blue]- su
+
+post_manage .> post_read : <<include>>
 
 @enduml

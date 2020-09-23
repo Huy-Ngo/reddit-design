@@ -21,6 +21,8 @@ user --> cmt_up
 user --> cmt_down
 
 cmt_read    <-[#blue]- su
-cmt_delete  <-[#blue]- su
+cmt_manage  <-[#blue]- su
+
+cmt_manage .> cmt_read : <<extends>>
 
 @enduml

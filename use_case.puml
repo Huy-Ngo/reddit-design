@@ -7,10 +7,8 @@ actor "Superuser" as su
 mod -|> user
 
 rectangle Post as post {
-  usecase "Create post" as post_create
+  usecase "Manage post" as post_manage
   usecase "View post" as post_read
-  usecase "Edit post" as post_update
-  usecase "Delete post" as post_delete
 
   usecase "Upvote post" as post_up
   usecase "Downvote post" as post_down
@@ -18,10 +16,8 @@ rectangle Post as post {
 }
 
 rectangle Comment as cmt {
-  usecase "Create comment" as cmt_create
+  usecase "Manage comment" as cmt_manage
   usecase "View comment" as cmt_read
-  usecase "Edit comment" as cmt_update
-  usecase "Delete comment" as cmt_delete
 
   usecase "Upvote commentt" as cmt_up
   usecase "Downvote comment" as cmt_down
@@ -30,8 +26,8 @@ rectangle Comment as cmt {
 rectangle Subreddit as sub {
   usecase "Create subreddit" as sub_create
   usecase "View subreddit" as sub_read
-  usecase "Edit subreddit" as sub_update
-  usecase "Delete subreddit" as sub_delete
+  usecase "Manage subreddit" as sub_manage
+  usecase "Add moderator" as sub_add_mod
 
   usecase "Join subreddit" as sub_join
   usecase "Leave subreddit" as sub_leave
@@ -57,17 +53,14 @@ user --> login
 user --> logout
 user --> pwd_change
 
-user --> post_create
-user --> post_update
-user --> post_delete
+user --> post_manage
+user --> post_read
 
 user --> post_up
 user --> post_down
 
-user --> cmt_create
+user --> cmt_manage
 user --> cmt_read
-user --> cmt_update
-user --> cmt_delete
 
 user --> cmt_up
 user --> cmt_down
@@ -79,17 +72,13 @@ user --> user_block
 user --> user_unblock
 user --> user_read
 
-mod -[#green]-> post_lock
-mod -[#green]-> sub_update
-mod -[#green]-> sub_delete
+mod -[#green]-> sub_manage
+mod -[#green]-> sub_add_mod
 mod -[#green]-> user_ban
 
-post_read   <-[#blue]- su
-post_delete <-[#blue]- su
-cmt_read    <-[#blue]- su
-cmt_delete  <-[#blue]- su
-sub_read    <-[#blue]- su
-sub_delete  <-[#blue]- su
+post_manage   <-[#blue]- su
+cmt_manage    <-[#blue]- su
+sub_manage    <-[#blue]- su
 user_read   <-[#blue]- su
 user_delete <-[#blue]- su
 
@@ -102,5 +91,6 @@ post_create ..> post_read : <<includes>>
 cmt_create ..> cmt_read : <<includes>>
 sub_create ..> sub_read : <<includes>>
 sub_create ..> sub_join : <<includes>>
+sub_manage ..> sub_read : <<includes>>
 
 @enduml
