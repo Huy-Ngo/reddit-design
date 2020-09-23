@@ -10,6 +10,7 @@ rectangle Subreddit as sub {
   usecase "Create subreddit" as sub_create
   usecase "View subreddit" as sub_read
   usecase "Manage subreddit" as sub_manage
+  usecase "Add moderator" as sub_add_mod
 
   usecase "Join subreddit" as sub_join
   usecase "Leave subreddit" as sub_leave
