@@ -22,8 +22,7 @@ user --> sub_leave
 mod -[#green]-> sub_manage
 mod -[#green]-> sub_add_mod
 
-sub_read    <-[#blue]- su
-sub_delete  <-[#blue]- su
+sub_manage    <-[#blue]- su
 
 sub_create ..> sub_read : <<includes>>
 sub_create ..> sub_join : <<includes>>
