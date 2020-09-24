@@ -82,6 +82,8 @@ login       <-[#blue]- su
 logout      <-[#blue]- su
 pwd_change  <-[#blue]- su
 
+acc_create ..> login : <<includes>>
+
 post_manage ..> post_read : <<includes>>
 cmt_manage ..> cmt_read : <<includes>>
 sub_create ..> sub_join : <<includes>>
