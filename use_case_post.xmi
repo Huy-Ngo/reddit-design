@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><XMI xmlns:UML="href://org.omg/UML/1.3" xmi.version="1.1">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="PlantUML 1.2020.02" xmi.id="model1">
+            <UML:Namespace.ownedElement>
+                <UML:Component name="Post" namespace="model1" xmi.id="cl0250">
+                    <UML:Classifier.feature/>
+                    <UML:Component name="Manage post" namespace="model1" xmi.id="cl0251">
+                        <UML:Classifier.feature/>
+                    </UML:Component>
+                    <UML:Component name="View post" namespace="model1" xmi.id="cl0252">
+                        <UML:Classifier.feature/>
+                    </UML:Component>
+                    <UML:Component name="Vote post" namespace="model1" xmi.id="cl0253">
+                        <UML:Classifier.feature/>
+                    </UML:Component>
+                    <UML:Component name="Lock comment" namespace="model1" xmi.id="cl0254">
+                        <UML:Classifier.feature/>
+                    </UML:Component>
+                </UML:Component>
+                <UML:Component name="User" namespace="model1" xmi.id="cl0246">
+                    <UML:Classifier.feature/>
+                </UML:Component>
+                <UML:Component name="Subreddit Moderator" namespace="model1" xmi.id="cl0247">
+                    <UML:Classifier.feature/>
+                </UML:Component>
+                <UML:Component name="Superuser" namespace="model1" xmi.id="cl0248">
+                    <UML:Classifier.feature/>
+                </UML:Component>
+                <UML:Association namespace="model1" xmi.id="ass262">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass262" type="cl0247" xmi.id="end263">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass262" type="cl0246" xmi.id="end264">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass265">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass265" type="cl0246" xmi.id="end266">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass265" type="cl0251" xmi.id="end267">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass268">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass268" type="cl0246" xmi.id="end269">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass268" type="cl0252" xmi.id="end270">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass271">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass271" type="cl0246" xmi.id="end272">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass271" type="cl0253" xmi.id="end273">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass274">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass274" type="cl0247" xmi.id="end275">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass274" type="cl0254" xmi.id="end276">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass277">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass277" type="cl0252" xmi.id="end278">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass277" type="cl0248" xmi.id="end279">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass280">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass280" type="cl0251" xmi.id="end281">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass280" type="cl0248" xmi.id="end282">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="«include»" namespace="model1" xmi.id="ass283">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass283" type="cl0251" xmi.id="end284">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass283" type="cl0252" xmi.id="end285">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>
