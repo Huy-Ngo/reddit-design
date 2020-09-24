@@ -17,8 +17,7 @@ rectangle Post as post {
 user --> post_manage
 user --> post_read
 
-user --> post_up
-user --> post_down
+user --> post_vote
 
 mod -[#green]-> post_lock
 
