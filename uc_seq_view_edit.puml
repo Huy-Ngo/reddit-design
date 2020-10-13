@@ -1,0 +1,13 @@
+@startuml
+
+actor User as user
+boundary PostInterface as post_int
+control PostController as post_ctl
+entity Post as post_ent
+
+user -> post_int : 1: // edit post()
+post_int -> post_ctl : 2: // edit post()
+post_ctl -> post_ent : 3: // edit post()
+post_int -> post_int : 4: // display post()
+
+@enduml

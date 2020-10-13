@@ -1,0 +1,11 @@
+@startuml
+
+(*) --> "Start"
+if "Existing post" then
+  --> "View"
+else
+  --> "Create"
+  --> "View"
+--> "End"
+--> (*)
+@enduml

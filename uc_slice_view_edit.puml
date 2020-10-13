@@ -1,0 +1,11 @@
+@startuml
+
+(*) --> "Start"
+-> "View"
+if "edit" then
+  ->[true] "Edit"
+  --> "View"
+else
+  -->[false] "End"
+--> (*)
+@enduml

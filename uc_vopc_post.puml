@@ -1,0 +1,29 @@
+@startuml
+class User <<entity>> {
+  + view post()
+  + delete post()
+  + create post()
+  + edit post()
+}
+
+class PostInterface <<boundary>> {
+  + get post()
+  + update post()
+  + display()
+}
+
+class PostController <<controller>> {
+  + get post()
+  + edit post()
+  + delete post()
+  + create post()
+}
+
+class Post <<entity>> {
+  + get post()
+  + edit post()
+  + delete post()
+  + create post()
+}
+
+@enduml

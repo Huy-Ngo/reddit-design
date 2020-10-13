@@ -1,0 +1,19 @@
+@startuml
+
+actor User as user
+boundary PostInterface as post_int
+control PostController as post_ctl
+entity Post as post_ent
+
+user -> post_int : 1: // create post()
+activate post_int
+post_int -> post_ctl : 2: // create post()
+activate post_ctl
+post_ctl -> post_ent : 3: // create post()
+activate post_ent
+post_ctl <-- post_ent : 4: // update post()
+deactivate post_ent
+post_int <-- post_ctl : 5: // update post()
+deactivate post_ctl
+post_int -> post_int : 4: // display post()
+@enduml
