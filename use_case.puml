@@ -8,7 +8,6 @@ mod -|> user
 
 rectangle Post as post {
   usecase "Manage post" as post_manage
-  usecase "View post" as post_read
 
   usecase "Vote post" as post_vote
   usecase "Lock comment" as post_lock
@@ -16,7 +15,6 @@ rectangle Post as post {
 
 rectangle Comment as cmt {
   usecase "Manage comment" as cmt_manage
-  usecase "View comment" as cmt_read
 
   usecase "Vote comment" as cmt_vote
 }
@@ -51,12 +49,10 @@ user --> logout
 user --> pwd_change
 
 user --> post_manage
-user --> post_read
 
 user --> post_vote
 
 user --> cmt_manage
-user --> cmt_read
 
 user --> cmt_vote
 

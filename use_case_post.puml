@@ -8,22 +8,18 @@ mod -|> user
 
 rectangle Post as post {
   usecase "Manage post" as post_manage
-  usecase "View post" as post_read
 
   usecase "Vote post" as post_vote
   usecase "Lock comment" as post_lock
 }
 
 user --> post_manage
-user --> post_read
 
 user --> post_vote
 
 mod -[#green]-> post_lock
 
-post_read   <-[#blue]- su
 post_manage <-[#blue]- su
-
-post_manage .> post_read : <<include>>
+post_lock <-[#blue]- su
 
 @enduml

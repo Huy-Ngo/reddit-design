@@ -1,0 +1,25 @@
+@startuml
+class UserController <<subsystem>> {
+    // block user()
+    // unblock user()
+}
+
+class IUser <<interface>> {
+    blockUser(blockedUser: User, user: User)
+    unblockUser(unblockedUser: User, user: User)
+}
+
+class UserProxy <<subsystem proxy>> {
+    blockUser(blockedUser: User, user: User)
+    unblockUser(unblockedUser: User, user: User)
+}
+
+class User <<entity>>
+
+UserController "0..1" --> "0..1" IUser : block other users via
+
+IUser <|- UserProxy
+IUser --> User
+UserProxy --> User
+
+@enduml

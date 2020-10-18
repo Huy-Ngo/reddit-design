@@ -8,19 +8,14 @@ mod -|> user
 
 rectangle Comment as cmt {
   usecase "Manage comment" as cmt_manage
-  usecase "View comment" as cmt_read
 
   usecase "Vote comment" as cmt_vote
 }
 
 user --> cmt_manage
-user --> cmt_read
 
 user --> cmt_vote
 
-cmt_read    <-[#blue]- su
 cmt_manage  <-[#blue]- su
-
-cmt_manage .> cmt_read : <<extends>>
 
 @enduml
