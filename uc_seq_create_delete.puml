@@ -1,0 +1,38 @@
+@startuml
+
+hide footbox
+autoactivate on
+
+actor User as user
+boundary PostView as post_view
+boundary PostForm as post_form
+control PostController as post_ctl
+entity Post as post_ent
+entity User as user_ent
+
+'Create post
+user -> post_form : // create post()
+post_form -> post_ctl : // create post()
+post_ctl -> user_ent : // get user()
+user_ent --> post_ctl
+post_ctl -> post_ent : // create post()
+post_ent --> post_ctl
+post_ctl --> post_form
+deactivate post_form
+post_ctl -> post_view
+post_view -> post_view : // display post()
+
+'Delete post
+user -> post_view : // delete post()
+post_view --> user : // ask for confirmation()
+user -> post_view : // confirm delete()
+post_view -> post_ctl : // delete post()
+post_ctl -> user_ent : // check owner()
+user_ent --> post_ctl
+post_ctl -> post_ent : // delete post()
+post_ent --> post_ctl
+post_ctl --> post_view
+
+destroy post_view
+
+@enduml

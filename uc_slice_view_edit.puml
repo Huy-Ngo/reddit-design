@@ -1,11 +1,12 @@
 @startuml
 
-(*) --> "Start"
--> "View"
-if "edit" then
-  ->[true] "Edit"
-  --> "View"
-else
-  -->[false] "End"
---> (*)
+skinparam conditionStyle diamond
+
+start
+
+repeat :View post;
+backward :Edit post;
+repeat while (Edit)
+stop
+
 @enduml

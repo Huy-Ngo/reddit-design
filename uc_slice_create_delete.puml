@@ -1,0 +1,10 @@
+@startuml
+
+start
+
+:Create post;
+:View post;
+:Delete post;
+stop
+
+@enduml

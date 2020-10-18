@@ -1,13 +1,45 @@
 @startuml
 
+hide footbox
+autoactivate on
+
 actor User as user
-boundary PostInterface as post_int
+boundary PostView as post_view
+boundary PostForm as post_form
 control PostController as post_ctl
 entity Post as post_ent
+entity User as user_ent
 
-user -> post_int : 1: // edit post()
-post_int -> post_ctl : 2: // edit post()
-post_ctl -> post_ent : 3: // edit post()
-post_int -> post_int : 4: // display post()
+'View post
+user -> post_view : 1: // open post()
+post_view -> post_ctl : // get post()
+post_ctl -> post_ent : // get post()
+post_ctl <-- post_ent
+post_ctl -> user_ent : // check owner()
+post_ctl <-- user_ent
+post_view <-- post_ctl
+post_view -> post_view : : // display post()
+
+'Edit post
+deactivate post_view
+user -> post_view : // start editing ()
+post_view -> post_ctl : // start editing()
+post_ctl -> user_ent : // check owner()
+post_ctl <-- user_ent
+post_ctl -> post_form : // open post form()
+post_form -> post_form : // display()
+user -> post_form : // submit post edit()
+post_form -> post_ctl : 2: // update post()
+post_ctl -> post_ent : 3: // update post()
+deactivate post_ent
+deactivate post_ctl
+post_form <-- post_ctl
+deactivate post_form
+deactivate post_form
+post_view <-- post_form
+deactivate post_view
+
+post_view --> post_view : // display post()
+
 
 @enduml
