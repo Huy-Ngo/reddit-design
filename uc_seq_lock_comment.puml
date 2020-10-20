@@ -1,0 +1,21 @@
+@startuml
+
+hide footbox
+autoactivate on
+
+actor Moderator as mod
+boundary PostView as post_view
+control PostController as post_ctl
+entity Post as post_ent
+entity Subreddit as sub_ent
+
+mod -> post_view : // lock comment()
+post_view -> post_ctl : // lock comment()
+post_ctl -> sub_ent : // check moderator()
+post_ctl <-- sub_ent
+post_ctl -> post_ent : // lock comment()
+post_ent --> post_ctl
+post_ctl --> post_view
+post_view --> mod
+
+@enduml

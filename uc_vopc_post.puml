@@ -1,29 +1,36 @@
 @startuml
-class User <<entity>> {
-  + view post()
-  + delete post()
-  + create post()
-  + edit post()
+class Subreddit <<entity>> {
+  // verify moderator()
 }
 
-class PostInterface <<boundary>> {
-  + get post()
-  + update post()
-  + display()
+class PostView <<boundary>> {
+  // display post()
+  // lock comment()
+}
+
+class PostForm <<boundary>> {
+  // create post()
+  // update post()
+  // delete post()
+  // display()
 }
 
 class PostController <<controller>> {
-  + get post()
-  + edit post()
-  + delete post()
-  + create post()
+  // get post()
+  // edit post()
+  // delete post()
+  // create post()
+  // lock comment()
+  // open post form()
+  // check moderator()
 }
 
 class Post <<entity>> {
-  + get post()
-  + edit post()
-  + delete post()
-  + create post()
+  // get post()
+  // edit post()
+  // delete post()
+  // create post()
+  // lock comment()
 }
 
 @enduml
