@@ -1,0 +1,18 @@
+@startuml
+
+autoactivate on
+hide footbox
+
+actor User as user
+boundary LoginForm as form
+control AuthenticationController as ctl
+entity User as user_ent
+
+user -> form : // submit login form()
+form -> ctl : // login()
+ctl -> user_ent : // verify username and password()
+user_ent --> ctl
+ctl --> form
+deactivate form
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+class PostController <<subsystem>> {
+    // create post()
+    // read post()
+    // update post()
+    // delete post()
+}
+
+class IPost <<interface>> {
+    createPost(content: String, subreddit: Subreddit, user: User)
+    updatePost(post: Post, newContent: String, user: User)
+    deletePost(post: Post, user: User)
+    readPost(post: Post)
+}
+
+class Core <<subsystem proxy>> {
+    createPost(content: String, subreddit: Subreddit, user: User)
+    updatePost(post: Post, newContent: String, user: User)
+    deletePost(post: Post, user: User)
+    readPost(post: Post)
+}
+
+class User <<entity>>
+class Post <<entity>>
+
+PostController "0..1" --> "0..1" IPost : manage posts via
+
+IPost <|-- Core
+Core --> User
+Core --> Post
+IPost --> User
+IPost --> Post
+
+@enduml

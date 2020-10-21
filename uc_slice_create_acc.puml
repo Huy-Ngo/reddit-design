@@ -1,0 +1,20 @@
+@startuml
+
+autoactivate on
+hide footbox
+
+actor User as user
+boundary CreateAccountForm as form
+control AuthenticationController as ctl
+entity User as user_ent
+
+user -> form : // submit account creation form()
+form -> ctl : // create account()
+ctl -> ctl : // check constraints()
+deactivate ctl
+ctl -> user_ent : // create account()
+user_ent --> ctl
+ctl --> form
+deactivate form
+
+@enduml

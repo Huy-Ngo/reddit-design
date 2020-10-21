@@ -1,20 +1,17 @@
 @startuml
-class AuthenticationController <<subsystem>> {
+class AuthenticationController <<control>> {
     // create account()
     // log in ()
-    // log out()
 }
 
 class IAuthentication <<interface>> {
     createAccount(username: String, password: String)
     verifyPassword(username: String, password: String)
-    logOut()
 }
 
 class Authentication <<subsystem proxy>> {
     createAccount(username: String, password: String)
     verifyPassword(username: String, password: String)
-    logOut()
 }
 
 class User <<entity>>
