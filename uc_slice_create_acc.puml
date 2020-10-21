@@ -8,6 +8,8 @@ boundary CreateAccountForm as form
 control AuthenticationController as ctl
 entity User as user_ent
 
+autonumber
+
 user -> form : // submit account creation form()
 form -> ctl : // create account()
 ctl -> ctl : // check constraints()

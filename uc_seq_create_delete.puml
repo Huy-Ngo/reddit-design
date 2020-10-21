@@ -9,6 +9,7 @@ boundary PostForm as post_form
 control PostController as post_ctl
 entity Post as post_ent
 
+autonumber
 'Create post
 user -> post_form : // create post()
 post_form -> post_ctl : // create post()

@@ -6,14 +6,14 @@ hide footbox
 actor User as user
 boundary LoginForm as form
 control AuthenticationController as ctl
-entity User as user_ent
+
+participant ":AuthenticationSystem \n <<subsystem>>" as subsys
 
 autonumber
-
 user -> form : // submit login form()
 form -> ctl : // login()
-ctl -> user_ent : // verify username and password()
-user_ent --> ctl
+ctl -> subsys : verifyPassword(username, password)
+subsys --> ctl
 ctl --> form
 deactivate form
 
