@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="322px" preserveAspectRatio="none" style="width:355px;height:322px;" version="1.1" viewBox="0 0 355 322" width="355px" zoomAndPan="magnify"><defs><filter height="300%" id="f1bd5q3ucants7" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d5ac3844f66b12d9e08170e47495e096]
+cluster app--><polygon fill="#FFFFFF" filter="url(#f1bd5q3ucants7)" points="87,24,229,24,236,46.2969,265,46.2969,265,163,87,163,87,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="87" x2="236" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="91" y="38.9951">Application Layer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="51" x="154.5" y="61.292">«layer»</text><!--MD5=[b33ebb3c75309ea43744ace0f7f7d9ae]
+cluster mid--><polygon fill="#FFFFFF" filter="url(#f1bd5q3ucants7)" points="22,187,168,187,175,209.2969,333,209.2969,333,310,22,310,22,187" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="175" y1="209.2969" y2="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="140" x="26" y="201.9951">Middleware Layer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="51" x="156" y="224.292">«layer»</text><!--MD5=[e29493a8775effcafa538aa0485107d1]
+entity auth--><polygon fill="#FEFECE" filter="url(#f1bd5q3ucants7)" points="103.5,75,144.5,75,151.5,97.2969,248.5,97.2969,248.5,146.8906,103.5,146.8906,103.5,75" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="103.5" x2="151.5" y1="97.2969" y2="97.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="107.5" y="90.9951">auth</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="92" x="125" y="117.292">«subsystem»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115" x="113.5" y="133.5889">Authentication</text><!--MD5=[25fdbc256ceb9e3bdcb330150c9533c0]
+entity sec--><polygon fill="#FEFECE" filter="url(#f1bd5q3ucants7)" points="207,238,241,238,248,260.2969,317,260.2969,317,293.5938,207,293.5938,207,238" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="207" x2="248" y1="260.2969" y2="260.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="28" x="211" y="253.9951">sec</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="80" x="217" y="280.292">Werkzeug</text><!--MD5=[bea2a68a126f07da28eb9f190a9ea435]
+entity orm--><polygon fill="#FEFECE" filter="url(#f1bd5q3ucants7)" points="38.5,238,75.5,238,82.5,260.2969,171.5,260.2969,171.5,293.5938,38.5,293.5938,38.5,238" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="38.5" x2="82.5" y1="260.2969" y2="260.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="31" x="42.5" y="253.9951">orm</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="103" x="48.5" y="280.292">SQLALchemy</text><!--MD5=[13583acaa721712abce4818aa200cd5b]
+link auth to sec--><path d="M195.73,147.1 C210.3,173.01 229.96,208 244.08,233.11 " fill="none" id="auth-&gt;sec" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="246.65,237.69,245.7377,227.8835,244.2048,233.3287,238.7596,231.7958,246.65,237.69" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[517dade35c74183b0038003298d5dc09]
+link auth to orm--><path d="M159.71,147.1 C147.69,173.01 131.45,208 119.8,233.11 " fill="none" id="auth-&gt;orm" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="117.68,237.69,125.104,231.2182,119.7897,233.1569,117.8511,227.8426,117.68,237.69" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3d4fdcd4d46240764fcc2151be4d0e42]
+@startuml
+package "Application Layer" as app <<layer>> {
+    package "Authentication" as auth <<subsystem>>
+}
+package "Middleware Layer" as mid <<layer>> {
+    package "Werkzeug" as sec
+    package "SQLALchemy" as orm
+}
+
+auth - -> sec
+auth - -> orm
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

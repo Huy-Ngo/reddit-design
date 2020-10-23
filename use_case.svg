@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1336px" preserveAspectRatio="none" style="width:819px;height:1336px;" version="1.1" viewBox="0 0 819 1336" width="819px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ngkz0ae9k3o" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7897f92c915a4f2d5b020cb8df715334]
+cluster post--><rect fill="#FFFFFF" filter="url(#f1ngkz0ae9k3o)" height="213" style="stroke: #000000; stroke-width: 1.5;" width="169" x="222.5" y="340"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="289.5" y="354.9951">Post</text><!--MD5=[ec3c37ee39405f79e1c57a0120587186]
+cluster cmt--><rect fill="#FFFFFF" filter="url(#f1ngkz0ae9k3o)" height="154" style="stroke: #000000; stroke-width: 1.5;" width="187" x="213.5" y="1171"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="269.5" y="1185.9951">Comment</text><!--MD5=[9892c6f77c442752088fcf6c309c0000]
+cluster sub--><rect fill="#FFFFFF" filter="url(#f1ngkz0ae9k3o)" height="292" style="stroke: #000000; stroke-width: 1.5;" width="474.5" x="213.5" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="77" x="412.25" y="38.9951">Subreddit</text><!--MD5=[966f4604668cc1389b84bf24d3068ea9]
+cluster user_mng--><rect fill="#FFFFFF" filter="url(#f1ngkz0ae9k3o)" height="295" style="stroke: #000000; stroke-width: 1.5;" width="224" x="195" y="577"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="143" x="235.5" y="591.9951">User Management</text><!--MD5=[0c4a738b3201a23a254af68352446157]
+cluster auth--><rect fill="#FFFFFF" filter="url(#f1ngkz0ae9k3o)" height="220" style="stroke: #000000; stroke-width: 1.5;" width="438" x="213.5" y="927"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115" x="375" y="941.9951">Authentication</text><ellipse cx="307.2036" cy="522.1407" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="63.7036" ry="15.1407" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="262.2036" y="526.7892">Manage post</text><ellipse cx="306.8762" cy="457.0236" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="50.3762" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="273.3762" y="461.6721">Vote post</text><ellipse cx="306.7758" cy="391.0552" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="68.2758" ry="16.0552" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="255.7758" y="395.7036">Lock comment</text><ellipse cx="307.1068" cy="1223.9214" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="77.6068" ry="17.9214" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="125" x="244.6068" y="1228.5698">Manage comment</text><ellipse cx="306.7758" cy="1293.0552" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="68.2758" ry="16.0552" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="255.7758" y="1297.7036">Vote comment</text><ellipse cx="306.8797" cy="214.1759" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="73.8797" ry="17.1759" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="116" x="248.8797" y="218.8244">Create subreddit</text><ellipse cx="603.2758" cy="146.0552" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="68.2758" ry="16.0552" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="552.2758" y="150.7036">View subreddit</text><ellipse cx="307.1068" cy="76.9214" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="77.6068" ry="17.9214" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="125" x="244.6068" y="81.5698">Manage subreddit</text><ellipse cx="307.1672" cy="146.1334" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="68.6672" ry="16.1334" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="255.6672" y="150.7819">Add moderator</text><ellipse cx="603.7007" cy="213.9401" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="65.2007" ry="15.4401" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="556.7007" y="218.5886">Join subreddit</text><ellipse cx="306.9465" cy="283.1893" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="71.4465" ry="16.6893" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="251.9465" y="287.8377">Leave subreddit</text><ellipse cx="306.8762" cy="769.0236" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="50.3762" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="273.3762" y="773.6721">View user</text><ellipse cx="306.7756" cy="705.0236" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="60.2756" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="266.2756" y="709.6721">Delete user</text><ellipse cx="306.9883" cy="837.0977" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="80.9883" ry="18.5977" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="133" x="240.4883" y="841.7461">Block/unblock user</text><ellipse cx="306.9095" cy="634.0819" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="95.9095" ry="21.5819" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="223.4095" y="638.7303">Ban user from subreddit</text><ellipse cx="306.85" cy="1042.87" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="69.85" ry="16.37" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="253.85" y="1047.5184">Create account</text><ellipse cx="603.4914" cy="979.0236" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="31.9914" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="582.9914" y="983.6721">Log in</text><ellipse cx="306.7696" cy="977.0236" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="39.7696" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="280.7696" y="981.6721">Log out</text><ellipse cx="307.1068" cy="1112.9214" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="77.6068" ry="17.9214" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="125" x="244.6068" y="1117.5698">Change password</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="77" cy="806" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M77,814 L77,841 M64,822 L90,822 M77,841 L64,856 M77,841 L90,856 " fill="none" filter="url(#f1ngkz0ae9k3o)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="61" y="874.4951">User</text><!--MD5=[761bb8b7a05a8485be9af9eb1119acaf]
+entity mod--><ellipse cx="77" cy="360" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M77,368 L77,395 M64,376 L90,376 M77,395 L64,410 M77,395 L90,410 " fill="none" filter="url(#f1ngkz0ae9k3o)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="6" y="428.4951">Subreddit Moderator</text><!--MD5=[21f481ccb9ecb7db63df63b581fb1a69]
+entity su--><ellipse cx="771" cy="880" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M771,888 L771,915 M758,896 L784,896 M771,915 L758,930 M771,915 L784,930 " fill="none" filter="url(#f1ngkz0ae9k3o)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="735" y="948.4951">Superuser</text><!--MD5=[fa181ed488704708af87d9fde45716c0]
+entity post_read--><ellipse cx="603.5" cy="585" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M603.5,593 L603.5,620 M590.5,601 L616.5,601 M603.5,620 L590.5,635 M603.5,620 L616.5,635 " fill="none" filter="url(#f1ngkz0ae9k3o)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="69" x="569" y="653.4951">post_read</text><!--MD5=[6594d174300866bdabff535ba911d23e]
+entity cmt_read--><ellipse cx="603.5" cy="1181" fill="#FEFECE" filter="url(#f1ngkz0ae9k3o)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M603.5,1189 L603.5,1216 M590.5,1197 L616.5,1197 M603.5,1216 L590.5,1231 M603.5,1216 L616.5,1231 " fill="none" filter="url(#f1ngkz0ae9k3o)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="64" x="571.5" y="1249.4951">cmt_read</text><!--MD5=[3f3f72f5635791dd96f6ad4e1c57042c]
+link mod to user--><path d="M77,431.79 C77,546.59 77,661.39 77,776.19 " fill="none" id="mod-&gt;user" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="84,776.49,77,796.49,70,776.49,84,776.49" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fcf5aa25c481337728b3f9854ab3141a]
+link user to acc_create--><path d="M93.06,876.4 C110.06,915.67 141.42,974.91 187,1009 C202.65,1020.7 222.2,1028.38 240.9,1033.42 " fill="none" id="user-&gt;acc_create" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="246.15,1034.77,238.4438,1028.637,241.3104,1033.5137,236.4337,1036.3803,246.15,1034.77" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[723f75bbc208f5e0dee037db49810223]
+link user to login--><path d="M93.08,842.15 C114.04,849.24 153.2,862.23 187,872 C328.51,912.9 499.33,954.46 569.74,971.26 " fill="none" id="user-&gt;login" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="574.63,972.42,566.802,966.4432,569.7661,971.2613,564.948,974.2254,574.63,972.42" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[f0507fbd7be2efa159f334bb49a37f99]
+link user to logout--><path d="M93.02,856.01 C111.08,877.69 143.3,912.86 178,934 C205.5,950.75 240.33,961.9 266.72,968.65 " fill="none" id="user-&gt;logout" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="271.88,969.94,264.1189,963.8766,267.0293,968.7273,262.1786,971.6377,271.88,969.94" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fc12b8ab14c9ebb71cf1fd95904b7ace]
+link user to pwd_change--><path d="M85.63,877.58 C97.77,930.93 126.57,1024.1 187,1077 C200.66,1088.96 218.18,1096.94 235.56,1102.28 " fill="none" id="user-&gt;pwd_change" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="240.46,1103.71,232.9626,1097.3233,235.665,1102.293,230.6954,1104.9953,240.46,1103.71" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[eff0cb55ca21560ffa083d919b9d0831]
+link user to post_manage--><path d="M93.31,821.24 C116.54,796.22 159.97,744.82 179,692 C186.26,671.86 175.83,614.26 187,596 C204.64,567.16 238.19,547.82 265.18,536.17 " fill="none" id="user-&gt;post_manage" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="269.8,534.23,259.9528,534.0469,265.194,536.1754,263.0655,541.4165,269.8,534.23" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c38e95b97e096f8010e492ab5e9aad4a]
+link user to post_vote--><path d="M93.16,808.19 C116.17,762.93 159.33,671.77 179,589 C184.15,567.31 172.74,506.14 187,489 C202.58,470.27 227.85,461.87 251.11,458.32 " fill="none" id="user-&gt;post_vote" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="256.34,457.59,246.8757,454.8647,251.3874,458.2771,247.975,462.7888,256.34,457.59" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fa5a33975eabb44fd67315adb9b5ab11]
+link user to cmt_manage--><path d="M83.69,877.72 C94.3,941.15 122.21,1064.77 187,1147 C207.43,1172.93 239.13,1192.83 264.67,1205.9 " fill="none" id="user-&gt;cmt_manage" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="269.36,1208.26,263.1185,1200.6414,264.8936,1206.0125,259.5225,1207.7876,269.36,1208.26" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[56f254889a93be66e63f61c4f64ea293]
+link user to cmt_vote--><path d="M83.24,877.52 C96.31,972.43 133.2,1205.21 187,1260 C200.32,1273.56 218.69,1281.69 237.01,1286.52 " fill="none" id="user-&gt;cmt_vote" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="242.17,1287.8,234.3962,1281.7528,237.3168,1286.5974,232.4721,1289.518,242.17,1287.8" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[84519fefecf4c44656211ef5a2472632]
+link user to sub_create--><path d="M85.3,796.06 C108.96,663.49 182.34,254.17 187,249 C199.13,235.55 216.13,227.17 233.5,221.96 " fill="none" id="user-&gt;sub_create" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="238.4,220.58,228.6523,219.172,233.5876,221.9366,230.8229,226.8719,238.4,220.58" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1f3b4b7dd4e042eb60f3432d2a2d5367]
+link user to sub_leave--><path d="M92.95,796.32 C115.9,731.91 159.21,602.04 179,488 C183.91,459.7 172.43,383.75 187,359 C203.69,330.66 235.56,311.15 262.13,299 " fill="none" id="user-&gt;sub_leave" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="267.02,296.82,257.1712,296.84,262.4551,298.86,260.4351,304.1439,267.02,296.82" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[df27876f7934a13158e1fa8493082914]
+link user to user_block--><path d="M93.31,837 C119.23,837 173.52,837 220.77,837 " fill="none" id="user-&gt;user_block" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="225.9,837,216.9,833,220.9,837,216.9,841,225.9,837" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[53624ce0ec6620aac254551f0136ef06]
+link user to user_read--><path d="M93.08,831.72 C114.04,824.45 153.21,811.12 187,801 C212.25,793.44 240.75,785.75 263.53,779.8 " fill="none" id="user-&gt;user_read" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="268.6,778.48,258.8825,776.8766,263.7613,779.7398,260.8982,784.6186,268.6,778.48" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[19f5111f176ea660f8a2e51fe55217ea]
+link mod to sub_manage--><path d="M82.61,350.33 C91.65,289.69 117.34,175.88 187,112 C199.87,100.19 216.53,92.36 233.29,87.16 " fill="none" id="mod-&gt;sub_manage" style="stroke: #008000; stroke-width: 1.0;"/><polygon fill="#008000" points="238.49,85.63,228.7264,84.3368,233.6939,87.0431,230.9875,92.0106,238.49,85.63" style="stroke: #008000; stroke-width: 1.0;"/><!--MD5=[aec6b5a64b03877dcdb6799d28146cae]
+link mod to sub_add_mod--><path d="M88.17,350.34 C102.27,302.33 132.44,223.41 187,179 C201.97,166.81 221.13,159.12 239.68,154.26 " fill="none" id="mod-&gt;sub_add_mod" style="stroke: #008000; stroke-width: 1.0;"/><polygon fill="#008000" points="244.89,152.96,235.1933,151.2354,240.0359,154.1592,237.1121,159.0019,244.89,152.96" style="stroke: #008000; stroke-width: 1.0;"/><!--MD5=[bfcd9bfa2fc196ced71466666eda13c5]
+link mod to user_ban--><path d="M99.56,431.74 C119.26,466.54 150.78,516.59 187,553 C210.06,576.19 240.64,596.83 265.02,611.48 " fill="none" id="mod-&gt;user_ban" style="stroke: #008000; stroke-width: 1.0;"/><polygon fill="#008000" points="269.5,614.14,263.809,606.1018,265.2025,611.5843,259.72,612.9778,269.5,614.14" style="stroke: #008000; stroke-width: 1.0;"/><!--MD5=[045b215ee621df7241442e3f8cf3c26b]
+link mod to post_lock--><path d="M148.27,391 C175.24,391 206.07,391 233.27,391 " fill="none" id="mod-&gt;post_lock" style="stroke: #008000; stroke-width: 1.0;"/><polygon fill="#008000" points="238.31,391,229.31,387,233.31,391,229.31,395,238.31,391" style="stroke: #008000; stroke-width: 1.0;"/><!--MD5=[7656b4ce6b6b7b2a004566b40964ac86]
+reverse link post_manage to su--><path d="M356.61,510.12 C437.83,493.43 601.52,473.73 696,558 C742.09,599.11 761.09,786.44 767.38,870.25 " fill="none" id="post_manage&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="351.38,511.22,361.011,513.2801,356.2727,510.1899,359.3629,505.4517,351.38,511.22" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[448a4cd959e85ee9d8729d3f5bcad91c]
+reverse link cmt_manage to su--><path d="M360.87,1239.37 C454.85,1265.25 645.83,1310.89 696,1270 C744.84,1230.2 762.4,1037.21 767.85,951.8 " fill="none" id="cmt_manage&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="355.92,1238,363.5144,1244.271,360.7362,1239.3434,365.6638,1236.5652,355.92,1238" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[339118e2d60c9b215f1c157e58084e39]
+reverse link sub_manage to su--><path d="M363.82,62.47 C448.44,44.18 608.56,24.77 696,112 C750.15,166.02 765.85,715.42 769.22,870.46 " fill="none" id="sub_manage&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="358.85,63.57,368.4979,65.5493,363.7339,62.499,366.7843,57.735,358.85,63.57" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[031fafac9fb003a78734ff3840b5ae4d]
+reverse link user_read to su--><path d="M350.44,779.89 C373.22,785.86 401.72,793.55 427,801 C540.07,834.31 672.6,878.21 734.62,899.04 " fill="none" id="user_read&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="345.38,778.56,353.0648,784.7199,350.2152,779.8332,355.1019,776.9836,345.38,778.56" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[02bb658e8e1bee6d39248ee205855aa6]
+reverse link user_delete to su--><path d="M362.53,714.08 C441.27,729.1 589.08,764.61 696,834 C711.09,843.79 725.36,857.22 737.28,870.12 " fill="none" id="user_delete&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="357.44,713.12,365.5408,718.7215,362.3531,714.0483,367.0262,710.8606,357.44,713.12" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[bb0798ae281f299fae1e172292ca8ee5]
+reverse link acc_create to su--><path d="M370.39,1052.87 C451.04,1062.44 593.29,1068.19 696,1011 C719.87,997.71 738.22,973.14 750.67,951.68 " fill="none" id="acc_create&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="365.17,1052.24,373.6241,1057.2925,370.1338,1052.8408,374.5854,1049.3504,365.17,1052.24" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[55d6f1d9d46336fe6a4806d41b37cc25]
+reverse link login to su--><path d="M632.6,967.45 C660.84,955.85 704.42,937.94 734.91,925.42 " fill="none" id="login&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="627.86,969.4,637.7048,969.6827,632.4855,967.5013,634.6668,962.2819,627.86,969.4" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[24490ee100cdef60f0b97204fd97b2f9]
+reverse link logout to su--><path d="M349.61,971.06 C439.65,958.19 651.17,927.98 734.94,916.01 " fill="none" id="logout&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="344.64,971.77,354.1196,974.4417,349.5886,971.0549,352.9754,966.5239,344.64,971.77" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[a8d6222626e813ae69df21b621ad7202]
+reverse link pwd_change to su--><path d="M379.01,1122.74 C462.8,1130.31 602.53,1130.15 696,1063 C732.71,1036.63 752.03,986.98 761.6,951.6 " fill="none" id="pwd_change&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="373.82,1122.26,382.4035,1127.0895,378.7978,1122.7307,383.1566,1119.125,373.82,1122.26" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[9abba76de1ed8800996de7db1d5bff14]
+link acc_create to login--><path d="M358.96,1031.93 C419.28,1018.82 518,997.36 569.26,986.22 " fill="none" id="acc_create-&gt;login" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="574.37,985.11,564.7276,983.1038,569.4831,986.1674,566.4195,990.9229,574.37,985.11" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="436" y="997.0669">«includes»</text><!--MD5=[c52b0ad623ea5edb569eba3f7c4423c8]
+link post_manage to post_read--><path d="M343.49,534.34 C368.9,543.1 403.97,555.03 435,565 C478.99,579.14 529.81,594.47 563.82,604.59 " fill="none" id="post_manage-&gt;post_read" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="568.72,606.05,561.2226,599.6633,563.925,604.633,558.9554,607.3353,568.72,606.05" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="436" y="561.0669">«includes»</text><!--MD5=[a19d0c9cbebeecc6298509790480faa0]
+link cmt_manage to cmt_read--><path d="M383.46,1220.93 C442.04,1218.54 520.7,1215.33 566.06,1213.48 " fill="none" id="cmt_manage-&gt;cmt_read" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="571.16,1213.28,562.0073,1209.6429,566.164,1213.4798,562.3271,1217.6365,571.16,1213.28" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="436" y="1212.0669">«includes»</text><!--MD5=[1c53af105c4828f839a2073b2e03219b]
+link sub_create to sub_join--><path d="M381.18,214 C427.6,214 487.3,214 532.99,214 " fill="none" id="sub_create-&gt;sub_join" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="538.21,214,529.21,210,533.21,214,529.21,218,538.21,214" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="436" y="210.0669">«includes»</text><!--MD5=[c68a71839bd53481ed4133449c777c58]
+link sub_manage to sub_read--><path d="M367.6,88.31 C387.38,93.65 408.95,101.28 427,112 C431.32,114.57 430.52,117.72 435,120 C463.9,134.67 498.93,141.53 529.47,144.58 " fill="none" id="sub_manage-&gt;sub_read" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="534.73,145.08,526.1341,140.2727,529.751,144.6222,525.4015,148.2391,534.73,145.08" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="436" y="116.0669">«includes»</text><!--MD5=[03ba4eeee6ebf2dfe52039a38dc51ce0]
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+
+rectangle Post as post {
+  usecase "Manage post" as post_manage
+
+  usecase "Vote post" as post_vote
+  usecase "Lock comment" as post_lock
+}
+
+rectangle Comment as cmt {
+  usecase "Manage comment" as cmt_manage
+
+  usecase "Vote comment" as cmt_vote
+}
+
+rectangle Subreddit as sub {
+  usecase "Create subreddit" as sub_create
+  usecase "View subreddit" as sub_read
+  usecase "Manage subreddit" as sub_manage
+  usecase "Add moderator" as sub_add_mod
+
+  usecase "Join subreddit" as sub_join
+  usecase "Leave subreddit" as sub_leave
+}
+
+rectangle "User Management" as user_mng {
+  usecase "View user" as user_read
+  usecase "Delete user" as user_delete
+  usecase "Block/unblock user" as user_block
+  usecase "Ban user from subreddit" as user_ban
+}
+
+rectangle "Authentication" as auth {
+  usecase "Create account" as acc_create
+  usecase "Log in" as login
+  usecase "Log out" as logout
+  usecase "Change password" as pwd_change
+}
+
+user - -> acc_create
+user - -> login
+user - -> logout
+user - -> pwd_change
+
+user - -> post_manage
+
+user - -> post_vote
+
+user - -> cmt_manage
+
+user - -> cmt_vote
+
+user - -> sub_create
+user - -> sub_leave
+
+user - -> user_block
+user - -> user_read
+
+mod -[#green]-> sub_manage
+mod -[#green]-> sub_add_mod
+mod -[#green]-> user_ban
+mod -[#green]-> post_lock
+
+post_manage   <-[#blue]- su
+cmt_manage    <-[#blue]- su
+sub_manage    <-[#blue]- su
+user_read   <-[#blue]- su
+user_delete <-[#blue]- su
+
+acc_create  <-[#blue]- su
+login       <-[#blue]- su
+logout      <-[#blue]- su
+pwd_change  <-[#blue]- su
+
+acc_create ..> login : <<includes>>
+
+post_manage ..> post_read : <<includes>>
+cmt_manage ..> cmt_read : <<includes>>
+sub_create ..> sub_join : <<includes>>
+sub_manage ..> sub_read : <<includes>>
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

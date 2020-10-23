@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="330px" preserveAspectRatio="none" style="width:544px;height:330px;" version="1.1" viewBox="0 0 544 330" width="544px" zoomAndPan="magnify"><defs><filter height="300%" id="f1trjg9ei4cnn5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[966f4604668cc1389b84bf24d3068ea9]
+cluster user_mng--><rect fill="#FFFFFF" filter="url(#f1trjg9ei4cnn5)" height="295" style="stroke: #000000; stroke-width: 1.5;" width="224" x="192" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="143" x="232.5" y="38.9951">User Management</text><ellipse cx="303.8762" cy="288.0236" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="50.3762" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="270.3762" y="292.6721">View user</text><ellipse cx="303.7756" cy="152.0236" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="60.2756" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="263.2756" y="156.6721">Delete user</text><ellipse cx="303.9883" cy="220.0977" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="80.9883" ry="18.5977" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="133" x="237.4883" y="224.7461">Block/unblock user</text><ellipse cx="303.9095" cy="81.0819" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="95.9095" ry="21.5819" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="220.4095" y="85.7303">Ban user from subreddit</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="77" cy="189" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M77,197 L77,224 M64,205 L90,205 M77,224 L64,239 M77,224 L90,239 " fill="none" filter="url(#f1trjg9ei4cnn5)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="61" y="257.4951">User</text><!--MD5=[761bb8b7a05a8485be9af9eb1119acaf]
+entity mod--><ellipse cx="77" cy="62" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M77,70 L77,97 M64,78 L90,78 M77,97 L64,112 M77,97 L90,112 " fill="none" filter="url(#f1trjg9ei4cnn5)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="6" y="130.4951">Subreddit Moderator</text><!--MD5=[21f481ccb9ecb7db63df63b581fb1a69]
+entity su--><ellipse cx="496" cy="189" fill="#FEFECE" filter="url(#f1trjg9ei4cnn5)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M496,197 L496,224 M483,205 L509,205 M496,224 L483,239 M496,224 L509,239 " fill="none" filter="url(#f1trjg9ei4cnn5)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="460" y="257.4951">Superuser</text><!--MD5=[3f3f72f5635791dd96f6ad4e1c57042c]
+link mod to user--><path d="M77,133.8 C77,142.22 77,150.63 77,159.05 " fill="none" id="mod-&gt;user" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="84,159.32,77,179.32,70,159.32,84,159.32" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[df27876f7934a13158e1fa8493082914]
+link user to user_block--><path d="M93.11,220 C118.5,220 171.47,220 217.85,220 " fill="none" id="user-&gt;user_block" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="222.89,220,213.89,216,217.89,220,213.89,224,222.89,220" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[53624ce0ec6620aac254551f0136ef06]
+link user to user_read--><path d="M93.35,225.56 C113.87,232.92 151.46,246.11 184,256 C209.12,263.63 237.5,271.3 260.25,277.22 " fill="none" id="user-&gt;user_read" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="265.31,278.53,257.5868,272.4183,260.4669,277.2871,255.5982,280.1672,265.31,278.53" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bfcd9bfa2fc196ced71466666eda13c5]
+link mod to user_ban--><path d="M148.27,89.25 C166.3,88.29 186.02,87.24 205.17,86.22 " fill="none" id="mod-&gt;user_ban" style="stroke: #008000; stroke-width: 1.0;"/><polygon fill="#008000" points="210.56,85.93,201.3559,82.4252,205.5674,86.2018,201.7908,90.4133,210.56,85.93" style="stroke: #008000; stroke-width: 1.0;"/><!--MD5=[031fafac9fb003a78734ff3840b5ae4d]
+reverse link user_read to su--><path d="M350.08,278.21 C372.63,272.72 400.13,265.15 424,256 C436,251.4 448.65,245.39 459.9,239.6 " fill="none" id="user_read&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="345.05,279.41,354.737,281.1884,349.9106,278.2377,352.8613,273.4114,345.05,279.41" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[02bb658e8e1bee6d39248ee205855aa6]
+reverse link user_delete to su--><path d="M354.62,162.91 C376.25,168.29 401.71,175.46 424,184 C436,188.6 448.65,194.61 459.9,200.4 " fill="none" id="user_delete&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="349.49,161.65,357.2846,167.6703,354.3474,162.8358,359.1819,159.8985,349.49,161.65" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[6bbb59a168dffa46a9f7d47fedb500a3]
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+rectangle "User Management" as user_mng {
+  usecase "View user" as user_read
+  usecase "Delete user" as user_delete
+  usecase "Block/unblock user" as user_block
+  usecase "Ban user from subreddit" as user_ban
+}
+user - -> user_block
+user - -> user_read
+
+mod -[#green]-> user_ban
+
+user_read   <-[#blue]- su
+user_delete <-[#blue]- su
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

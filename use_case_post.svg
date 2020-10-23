@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="248px" preserveAspectRatio="none" style="width:489px;height:248px;" version="1.1" viewBox="0 0 489 248" width="489px" zoomAndPan="magnify"><defs><filter height="300%" id="f19qhw2n45ba1t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7897f92c915a4f2d5b020cb8df715334]
+cluster post--><rect fill="#FFFFFF" filter="url(#f19qhw2n45ba1t)" height="213" style="stroke: #000000; stroke-width: 1.5;" width="169" x="192" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="259" y="38.9951">Post</text><ellipse cx="276.7036" cy="141.1407" fill="#FEFECE" filter="url(#f19qhw2n45ba1t)" rx="63.7036" ry="15.1407" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="231.7036" y="145.7892">Manage post</text><ellipse cx="276.3762" cy="206.0236" fill="#FEFECE" filter="url(#f19qhw2n45ba1t)" rx="50.3762" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="242.8762" y="210.6721">Vote post</text><ellipse cx="276.2758" cy="75.0552" fill="#FEFECE" filter="url(#f19qhw2n45ba1t)" rx="68.2758" ry="16.0552" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="225.2758" y="79.7036">Lock comment</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="77" cy="160" fill="#FEFECE" filter="url(#f19qhw2n45ba1t)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M77,168 L77,195 M64,176 L90,176 M77,195 L64,210 M77,195 L90,210 " fill="none" filter="url(#f19qhw2n45ba1t)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="61" y="228.4951">User</text><!--MD5=[761bb8b7a05a8485be9af9eb1119acaf]
+entity mod--><ellipse cx="77" cy="44" fill="#FEFECE" filter="url(#f19qhw2n45ba1t)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M77,52 L77,79 M64,60 L90,60 M77,79 L64,94 M77,79 L90,94 " fill="none" filter="url(#f19qhw2n45ba1t)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="6" y="112.4951">Subreddit Moderator</text><!--MD5=[21f481ccb9ecb7db63df63b581fb1a69]
+entity su--><ellipse cx="441" cy="77" fill="#FEFECE" filter="url(#f19qhw2n45ba1t)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M441,85 L441,112 M428,93 L454,93 M441,112 L428,127 M441,112 L454,127 " fill="none" filter="url(#f19qhw2n45ba1t)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="405" y="145.4951">Superuser</text><!--MD5=[3f3f72f5635791dd96f6ad4e1c57042c]
+link mod to user--><path d="M77,115.55 C77,120.42 77,125.3 77,130.17 " fill="none" id="mod-&gt;user" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="84,130.22,77,150.22,70,130.22,84,130.22" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[eff0cb55ca21560ffa083d919b9d0831]
+link user to post_manage--><path d="M93.17,187.16 C121.52,179.98 183.64,164.25 227.47,153.16 " fill="none" id="user-&gt;post_manage" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="232.45,151.9,222.7427,150.2359,227.6035,153.1295,224.7099,157.9903,232.45,151.9" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c38e95b97e096f8010e492ab5e9aad4a]
+link user to post_vote--><path d="M93.17,192.15 C120.42,194.22 178.88,198.66 222.29,201.96 " fill="none" id="user-&gt;post_vote" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="227.51,202.36,218.8453,197.6777,222.5249,201.9743,218.2283,205.6539,227.51,202.36" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[045b215ee621df7241442e3f8cf3c26b]
+link mod to post_lock--><path d="M148.19,75 C165.92,75 185,75 202.86,75 " fill="none" id="mod-&gt;post_lock" style="stroke: #008000; stroke-width: 1.0;"/><polygon fill="#008000" points="207.86,75,198.86,71,202.86,75,198.86,79,207.86,75" style="stroke: #008000; stroke-width: 1.0;"/><!--MD5=[7656b4ce6b6b7b2a004566b40964ac86]
+reverse link post_manage to su--><path d="M330.52,130.23 C354.89,125.28 383.14,119.55 404.84,115.14 " fill="none" id="post_manage&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="325.38,131.28,334.9921,133.4265,330.2818,130.2939,333.4144,125.5836,325.38,131.28" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[c7d9e40cb2d5246e490a81a705aa7816]
+reverse link post_lock to su--><path d="M333.9,86.45 C357.47,91.24 384.14,96.66 404.84,100.86 " fill="none" id="post_lock&lt;-su" style="stroke: #0000FF; stroke-width: 1.0;"/><polygon fill="#0000FF" points="328.92,85.44,336.9544,91.1364,333.8218,86.4261,338.5321,83.2935,328.92,85.44" style="stroke: #0000FF; stroke-width: 1.0;"/><!--MD5=[819858942321ddd2d757ca3125a8f459]
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+actor "User" as user
+actor "Subreddit Moderator" as mod
+actor "Superuser" as su
+mod -|> user
+
+rectangle Post as post {
+  usecase "Manage post" as post_manage
+
+  usecase "Vote post" as post_vote
+  usecase "Lock comment" as post_lock
+}
+
+user - -> post_manage
+
+user - -> post_vote
+
+mod -[#green]-> post_lock
+
+post_manage <-[#blue]- su
+post_lock <-[#blue]- su
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
