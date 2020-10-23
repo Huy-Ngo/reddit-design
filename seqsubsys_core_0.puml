@@ -1,0 +1,22 @@
+@startuml
+
+autoactivate on
+autonumber
+hide footbox
+
+participant ": Post Handling" as handler
+participant ": Core" as core <<subsystem proxy>>
+participant ": Post" as post
+participant ": SQLAlchemy" as orm <<external>>
+participant ": Werkzeug" as wz <<external>>
+
+handler -> core : // handle post()
+core -> wz : // get identity()
+wz --> core
+core -> post : // handle post()
+post -> orm : // send SQL query()
+deactivate orm
+post --> core
+core --> handler
+
+@enduml

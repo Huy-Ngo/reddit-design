@@ -1,0 +1,12 @@
+@startuml
+package "Application Layer" as app <<layer>> {
+    package "Authentication" as auth <<subsystem>>
+}
+package "Middleware Layer" as mid <<layer>> {
+    package "Werkzeug" as sec
+    package "SQLALchemy" as orm
+}
+
+auth --> sec
+auth --> orm
+@enduml

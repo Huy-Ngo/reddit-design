@@ -1,0 +1,28 @@
+@startuml
+
+autoactivate on
+autonumber
+hide footbox
+
+participant ": Create Account Handling" as handler
+participant ": Authentication" as auth <<subsystem proxy>>
+participant ": Account" as acc
+participant ": Werkzeug security packages" as werkzeug <<external>>
+participant ": SQLAlchemy" as orm <<external>>
+
+handler -> auth : // create account()
+auth -> acc : getUser(username)
+acc --> auth
+note left
+    If the user already exists,
+    refuse and mark as bad request
+end note
+auth -> werkzeug : getHash(password)
+werkzeug --> auth : // return password hash
+auth -> acc : createAccount(username, password_hash)
+acc -> orm : // send SQL query()
+deactivate orm
+acc --> auth : // success status
+auth --> handler
+
+@enduml

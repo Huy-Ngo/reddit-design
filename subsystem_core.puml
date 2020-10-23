@@ -7,14 +7,14 @@ class PostController <<subsystem>> {
 }
 
 class IPost <<interface>> {
-    createPost(content: String, subreddit: Subreddit, user: User)
+    createPost(title: String, content: String, subreddit: Subreddit, user: User)
     updatePost(post: Post, newContent: String, user: User)
     deletePost(post: Post, user: User)
     readPost(post: Post)
 }
 
 class Core <<subsystem proxy>> {
-    createPost(content: String, subreddit: Subreddit, user: User)
+    createPost(title: String, content: String, subreddit: Subreddit, user: User)
     updatePost(post: Post, newContent: String, user: User)
     deletePost(post: Post, user: User)
     readPost(post: Post)

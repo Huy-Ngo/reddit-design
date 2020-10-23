@@ -1,0 +1,35 @@
+@startuml
+
+hide footbox
+autoactivate on
+
+actor User as user
+boundary PostView as post_view
+boundary PostForm as post_form
+control PostController as post_ctl
+
+participant IPost as post_int <<interface>>
+
+autonumber
+'Create post
+user -> post_form : // create post()
+post_form -> post_ctl : // create post()
+post_ctl -> post_int : // createPost(title, content, subreddit, user)
+deactivate post_int
+post_ctl --> post_form
+deactivate post_form
+post_ctl -> post_view
+post_view -> post_view : // display post()
+
+'Delete post
+user -> post_view : // delete post()
+post_view --> user : // ask for confirmation()
+user -> post_view : // confirm delete()
+post_view -> post_ctl : // delete post()
+post_ctl -> post_int : // deletePost()
+deactivate post_int
+post_ctl --> post_view
+
+destroy post_view
+
+@enduml

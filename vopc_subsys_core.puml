@@ -1,0 +1,25 @@
+@startuml
+
+class Core {
+    getPost(postId: String)
+    editPost(postId: String, newContent: String)
+    createPost(title: String, content: String, subreddit: String, userId: String)
+    deletePost(postId: String)
+}
+class Post {
+    String title
+    String content
+    Subreddit subreddit
+    User owner
+}
+
+class Comment
+note bottom of Comment : Not designed yet
+class Subreddit
+note bottom of Subreddit : Not designed yet
+
+Core "1" -- "0..*" Post
+Post "1" o- "0..*" Comment
+Subreddit "0-1" o- "0..*" Post
+
+@enduml

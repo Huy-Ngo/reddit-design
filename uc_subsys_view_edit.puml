@@ -7,15 +7,16 @@ actor User as user
 boundary PostView as post_view
 boundary PostForm as post_form
 control PostController as post_ctl
-entity Post as post_ent
+
+participant IPost as post_int <<interface>>
 
 autonumber
 
 'View post
 user -> post_view : // open post()
 post_view -> post_ctl : // get post()
-post_ctl -> post_ent : // get post()
-post_ctl <-- post_ent
+post_ctl -> post_int : readPost(post)
+deactivate post_int
 post_view <-- post_ctl
 post_view -> post_view : // display post()
 
@@ -27,8 +28,8 @@ post_ctl -> post_form : // open post form()
 post_form -> post_form : // display()
 user -> post_form : // submit post edit()
 post_form -> post_ctl : // update post()
-post_ctl -> post_ent : // update post()
-post_ctl <-- post_ent
+post_ctl -> post_int : updatePost(post, newContent, user)
+deactivate post_int
 post_form <-- post_ctl
 deactivate post_ctl
 deactivate post_form

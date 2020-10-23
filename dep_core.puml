@@ -1,0 +1,12 @@
+@startuml
+package "Business Layer" as app <<layer>> {
+    package "Core" as core <<subsystem>>
+}
+package "Middleware Layer" as mid <<layer>> {
+    package "Werkzeug" as sec
+    package "SQLALchemy" as orm
+}
+
+core --> sec
+core --> orm
+@enduml

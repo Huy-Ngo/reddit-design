@@ -4,15 +4,18 @@ autoactivate on
 hide footbox
 
 actor User as user
-boundary LoginForm as form
+boundary CreateAccountForm as form
 control AuthenticationController as ctl
 
 participant ": AuthenticationSystem" as subsys <<subsystem proxy>>
 
 autonumber
-user -> form : // submit login form()
-form -> ctl : // login()
-ctl -> subsys : verifyPassword(username, password)
+
+user -> form : // submit account creation form()
+form -> ctl : // create account()
+ctl -> ctl : // check constraints()
+deactivate ctl
+ctl -> subsys : // createAccount(username, password)
 subsys --> ctl
 ctl --> form
 deactivate form

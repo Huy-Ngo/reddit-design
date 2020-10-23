@@ -1,0 +1,20 @@
+@startuml
+
+class Authentication {
+    getUser(username: String)
+    getHash(password: String)
+    createAccount(username: String, password_hash: String)
+}
+class Account {
+    String username
+    String passwordHash
+}
+
+class User
+class Superuser
+
+Authentication "1" -- "0..*" Account
+Account <|-- User
+Account <|-- Superuser
+
+@enduml
